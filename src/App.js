@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./css/style.css";
+import url from "./api";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Row from "./components/Row";
+import RowSm from "./components/RowSm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Hero />
+      <Row fetchedUrl={url.netflixMovies} title="Netflix Originals" />
+      <RowSm fetchedUrl={url.topRated} title="Top Rated" />
+      <RowSm fetchedUrl={url.actionMovies} title="Action Movies" />
+      <RowSm fetchedUrl={url.comedyMovies} title="Comedy Movies" />
+      <RowSm fetchedUrl={url.documentaryMovies} title="Documentary Movies" />
+      <RowSm fetchedUrl={url.horrorMovies} title="Horror Movies" />
+      <RowSm fetchedUrl={url.scifiMovies} title="Sci-fi Movies" />
     </div>
   );
 }
