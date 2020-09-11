@@ -13,9 +13,9 @@ Netflix clone build with React. You can scrool between diffrent movie genres, an
 
 ### Screenshot
 
-![Main screen]()
-![Genres]()
-![Trailer]()
+![Main screen](https://github.com/NejcPivec/Netflix-Clone/blob/master/src/screens/homescreen.png)
+![Genres](https://github.com/NejcPivec/Netflix-Clone/blob/master/src/screens/genres.png)
+![Trailer](https://github.com/NejcPivec/Netflix-Clone/blob/master/src/screens/trailer.png)
 
 ### Live website
 
